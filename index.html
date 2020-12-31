@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/e7843e520c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Pet Survey</h1>
+    <p id="description">Thank you for opening your home to an adoptive pet!</p>
+    </header> 
+      <!-- input fields -->
+    <form id="survey-form" action="#">
+      <div class="form-row">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+      </div>
+      <div class="form-row">
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+      </div>
+      <div class="form-row">
+        <label id="number-label" for="number">Age:</label>
+        <input  type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required/>
+      </div>
+      <!-- dropdown -->
+      <div class="form-group">
+      <p>What type of pet are you looking for?</p>
+      <select id="dropdown" name="pets" class="form-control" required>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+        <option value="bird">Bird</option>
+        <option value="small-pet">Small Pet (hamsters, guinea pigs, ferrets & more)</option>
+      </select>
+      </div>
+      <!-- radio buttons -->
+      <div class="form-group">
+      <p>What is the main reason you are seeking a pet?</p>
+      <label>
+        <input class="input-radio" type="radio" name="pet-reason" checked>Companionship
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="pet-reason">Exercise
+      </label>
+      <label>
+        <input class="input-radio" type="radio" name="pet-reason">Socializing
+      </label>
+      </div>
+      <!-- checkbox -->
+      <div class="form-group">
+      <p>What age pet are you seeking? (Check all that apply)</p>
+      <label>
+        <input name="age" value="infant" type="checkbox" class="input-checkbox" />Infant (6-7 months)
+      </label>
+      <label>
+        <input name="age" value="junior" type="checkbox" class="input-checkbox" />Junior (1-2 years)
+      </label>
+      <label>
+        <input name="age" value="adult" type="checkbox" class="input-checkbox" />Adult (2-6 years)
+      </label>
+      <label>
+        <input name="age" value="mature" type="checkbox" class="input-checkbox" />Mature (7-10 years)
+      </label>
+      <label>
+        <input name="age" value="senior" type="checkbox" class="input-checkbox" />Senior (11-14 years)
+      </label>
+      <label>
+        <input name="age" value="super-senior" type="checkbox" class="input-checkbox" />Super Senior (15 years and over)
+      </label>
+      </div>
+      <!-- dropdown -->
+      <div class="form-group">
+      <p>How soon are you looking to adopt?</p>
+      <select  id="pet-age" name="age" class="form-control" required>
+        <option value="infant">As soon as possible</option>
+        <option value="junior">Next month</option>
+        <option value="adult">In 2-3 months</option>
+        <option value="mature">Just exploring options, not ready to adopt</option>
+      </select>
+      </div>
+      <!-- comment box -->
+      <div class="form-group">
+        <p>Any comments?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <!-- submit button -->
+      <div class="container">
+      <button type="submit" class="submit-button" >Submit</button>
+      </div>
+      <!-- icon -->
+      <div id="pawprint">
+        <i class="fas fa-paw"></i>
+      </div>
+    </form>
+  </body>
+</html>
